@@ -26,3 +26,11 @@ gsap.to("elemento que quero a animações", {    ==> gsap.from indica para onde 
 })
 
 # ScrollTrigger ==> Ele anima os elementos assim que a barra de rolagem chega em um determinado local da página
+
+gsap.from(".card", {
+    opacity: 0,
+    duration: 1,
+    y: 30,
+    filter: "blur(10px)",
+    stagger: .3,  ==> faz a animações em sequencia
+});
