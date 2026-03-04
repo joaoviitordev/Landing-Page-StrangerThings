@@ -7,9 +7,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         effects: true
     });
 
-    /* EFEITOS DA HERO */
-    
-    // Efeito de fade
+    /* EFEITOS DA HERO 
+       Efeito de fade */
     gsap.from(".hero", {
         opacity: 0,
         duration: 1.7
@@ -28,15 +27,63 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     /* EFEITO DOS CARDS */
-    
     gsap.from(".card", {
         opacity: 0,
-        duration: 1,
         y: 10,
         filter: "blur(5px)",
-        stagger: .3,
+        stagger: .5,
         scrollTrigger: {
-            markers: true
+            trigger: ".card",
+            start: "0% 95%",
+            end: "0% 70%",
+            scrub: 2  // Serve para a animação depender somente do scroll
         }
     });
+    // Efeito na lista de cidades
+    gsap.from(".agradecimento ul li", {
+        opacity: 0,
+        x: 30,
+        filter: "blur(5px)",
+        stagger: .03,
+        scrollTrigger: {
+            trigger: ".agradecimento ul li",
+            scrub: true,
+            start: "0% 95%",
+            end: "10% 65%"
+        }
+    });
+
+    gsap.from("footer", {
+        y: "-30%",
+        immediateRender: false,
+        scrollTrigger: {
+            trigger: "footer",
+            start: "0% 90%",
+            end: "19% 30%",
+            scrub: true,
+            invalidateOnRefresh: true
+        }
+    });
+
+    /* ANIMAÇÃO NAS PALAVRAS */
+    const TextosSplits = document.querySelectorAll(".textSplit");
+
+    TextosSplits.forEach((TextosIndividuaisSplit) => {
+        const split = SplitText.create(TextosIndividuaisSplit, {
+            type: "lines, words, chars", // Tipo ==> letras, palavras, linhas...
+            mask: "lines"
+        });
+
+        gsap.from(split.chars, {
+            y: 40,
+            opacity: 0,
+            stagger: .03,
+            duration: .3,
+            scrollTrigger: {
+                trigger: TextosIndividuaisSplit
+            }
+        });
+    });
 });
+
+// chars = caractéres
