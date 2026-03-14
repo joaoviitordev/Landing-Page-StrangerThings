@@ -60,15 +60,11 @@ O projeto foi desenvolvido seguindo princípios de **responsive design**, garant
 
 ## 🚀 Objetivo do Projeto
 
-Este projeto foi desenvolvido com foco em **vagas de Estágio em Desenvolvimento Front-end e Front-end Júnior**, demonstrando competências técnicas e conceituais exigidas nessas posições, como:
-
 * Construção de interfaces modernas e responsivas
 * Aplicação de boas práticas de **HTML semântico e CSS organizado**
 * Uso de **JavaScript para interatividade e animações**
 * Atenção à **experiência do usuário (UI/UX)**
 * Código limpo, legível e de fácil manutenção
-
-O projeto é ideal para compor **portfólio profissional**, evidenciando capacidade de transformar um protótipo de design em uma aplicação funcional e visualmente atraente.
 
 ---
 
