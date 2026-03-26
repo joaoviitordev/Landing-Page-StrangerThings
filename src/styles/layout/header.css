@@ -1,0 +1,10 @@
+header {
+    display: flex;
+    width: 100%;
+    padding: 5vw 5vw 0vw 5vw;
+    justify-content: space-between;
+    font-family: var(--font-primary, 'Poppins', sans-serif);
+    color: var(--text-muted, rgba(255, 255, 255, 0.8));
+    position: absolute;
+    z-index: 10;
+}

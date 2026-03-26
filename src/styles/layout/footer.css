@@ -1,0 +1,156 @@
+footer {
+    width: 100%;
+    background-image: url("../../assets/images/bg-footer.webp");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .conteudo-footer {
+    display: flex;
+    width: 100%;
+    padding: 7vw 6vw 0vw 6vw;
+}
+
+footer .conteudo-footer .titulo-footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.8vw;
+    padding-bottom: 8.5vw;
+    line-height: 50px;
+}
+
+footer .conteudo-footer .titulo-footer h2 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color: var(--text-muted);
+    font-family: var(--font-primary);
+}
+
+footer .conteudo-footer .titulo-footer h1 {
+    font-size: 4vw;
+    font-family: var(--font-display);
+    color: white;
+    line-height: 62px;
+    width: 50%;
+}
+
+footer .conteudo-footer .texto-footer {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    gap: 6%;
+    padding-top: 3vw;
+    padding-right: 3vw;
+}
+
+footer .conteudo-footer .texto-footer .social img,
+footer .conteudo-footer .texto-footer .parceiro img {
+    padding-top: 6px;
+    padding-left: 6px;
+}
+
+footer .conteudo-footer .texto-footer .institucional ul {
+    list-style: none;
+    font-family: var(--font-primary);
+    font-weight: 300;
+}
+
+footer .logos-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 5vw 0vw 5vw;
+}
+
+footer .texto-infinito {
+    width: max-content;
+    display: flex;
+}
+
+footer .texto-infinito h3 {
+    color: rgb(191, 191, 191);
+    font-size: 12vw;
+    padding-left: 64px;
+    font-family: var(--font-display);
+    mix-blend-mode: color-dodge;
+    animation: textoInfinito 10s infinite linear;
+}
+
+@keyframes textoInfinito {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 440px) {
+    footer .conteudo-footer {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    footer .conteudo-footer .texto-footer {
+        padding: 4vw 0 4vw 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer .conteudo-footer .texto-footer h3 {
+        font-weight: 500;
+    }
+
+    footer .conteudo-footer .texto-footer .social {
+        font-size: 2.8vw;
+        text-align: center;
+    }
+
+    footer .conteudo-footer .texto-footer .social img {
+        height: 6vw;
+        width: 6vw;
+        padding: 0;
+        padding-top: 2px;
+    }
+
+    footer .conteudo-footer .texto-footer .institucional {
+        font-size: 2.8vw;
+    }
+
+    footer .conteudo-footer .texto-footer .parceiro {
+        font-size: 2.8vw;
+    }
+
+    footer .conteudo-footer .texto-footer .parceiro img {
+        padding: 0;
+        padding-top: 2px;
+        height: auto;
+        max-width: 24vw;
+    }
+
+    footer .conteudo-footer .titulo-footer {
+        padding: 10vw 0 0 0;
+        line-height: 8vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .conteudo-footer .titulo-footer h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 7.6vw;
+        line-height: normal;
+    }
+
+    footer .conteudo-footer .titulo-footer h2 {
+        letter-spacing: 2.4vw;
+        text-align: center;
+        font-size: 4.6vw;
+    }
+
+    footer .logos-footer img {
+        height: auto;
+        max-width: 18vw;
+    }
+}

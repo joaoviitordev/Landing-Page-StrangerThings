@@ -1,0 +1,39 @@
+button {
+    display: flex;
+    gap: 14px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.85);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: font-size 0.4s, color 0.4s;
+    align-items: center;
+}
+
+button:hover {
+    font-size: 18px;
+    color: white;
+}
+
+button img.seta {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    transition: width 0.25s ease, transform 0.25s ease;
+}
+
+button:hover img.seta {
+    width: 1.125em;
+    color: white;
+}
+
+@media (max-width: 440px) {
+    button {
+        font-size: 4vw;
+        display: none;
+    }
+}

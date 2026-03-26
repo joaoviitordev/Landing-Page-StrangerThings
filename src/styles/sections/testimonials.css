@@ -1,0 +1,44 @@
+.comentarios {
+    width: 100%;
+}
+
+.comentarios .logo-marcas {
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 8vw 0vw 8vw;
+}
+
+.comentarios .depoimentos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12vw 8vw 8vw 8vw;
+    gap: 40px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.comentarios .depoimentos img {
+    padding-bottom: 12px;
+}
+
+@media (max-width: 440px) {
+    .center .comentarios .depoimentos {
+        flex-direction: column;
+        padding: 16vw 8vw 0 8vw;
+    }
+
+    .center .comentarios .depoimentos img {
+        height: auto;
+        max-width: 32vw;
+    }
+
+    .center .comentarios .logo-marcas {
+        padding: 30vw 6vw 0 6vw;
+    }
+
+    .center .comentarios .logo-marcas img {
+        height: auto;
+        max-width: 24vw;
+    }
+}
