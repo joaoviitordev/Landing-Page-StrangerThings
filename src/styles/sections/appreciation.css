@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 16%;
     position: relative;
     z-index: 2;
     background-color: var(--bg-color);
@@ -29,13 +29,12 @@
 
 @media (max-width: 440px) {
     .agradecimento {
-        height: 20vh;
-        margin-top: 165vw;
+        height: 23vh;
     }
 
     .agradecimento ul {
         padding: 0;
-        animation: textoInfinito2 12s infinite both;
+        animation: textoInfinito2 12s infinite linear;
     }
     
     .agradecimento ul li {
@@ -53,6 +52,6 @@
 
 @keyframes textoInfinito2 {
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-120%);
     }
 }
