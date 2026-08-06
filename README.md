@@ -13,7 +13,7 @@ O desenvolvimento teve início a partir de um **protótipo criado no Figma**, ga
 ---
 ## Acesse o Projeto
 O portfólio está publicado e pode ser visualizado no link abaixo:
-* 👉 **https://joaoviitordev.github.io/Landing-Page-StrangerThings/**
+* **https://joaoviitordev.github.io/StrangerThings/**
 
 ---
 
